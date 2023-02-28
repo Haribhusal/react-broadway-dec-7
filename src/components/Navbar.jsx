@@ -1,4 +1,4 @@
-
+import { Link } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -12,12 +12,12 @@ const Navbar = () => {
             </div>
 
             <nav className="flex gap-5 flex-col md:flex-row items-center">
-                <a href={'/home'} className="text-blue-800 ">Home </a>
-                <a href={'/home'}>About Us </a>
-                <a href={'/home'}>Services </a>
-                <a href={'/home'}>Blog </a>
-                <a href={'/home'}>Gallery </a>
-                <a href={'/home'} className="bg-purple-800 px-5 py-2 text-white rounded hover:bg-purple-200 hover:text-purple-700 hover:rounded-full transition duration-300 ease-in-out">Contact </a>
+                <Link to={`/home`}>Home</Link>
+                <Link to={`/about-us`}>About Us</Link>
+                <Link to={`/services`}>Services</Link>
+                <Link to={`/blog`}>Blog</Link>
+                <Link to={`/gallery`}>Gallery</Link>
+                <Link to={`/contact`} className="bg-purple-800 px-5 py-2 text-white rounded hover:bg-purple-200 hover:text-purple-700 hover:rounded-full transition duration-300 ease-in-out">Contact</Link>
             </nav>
 
         </header>
